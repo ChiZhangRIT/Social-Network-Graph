@@ -14,8 +14,8 @@ nodes = [
         ('cl', 'Chang L', 'red', 40.71, -74),
         ('jy', 'Jing Y', 'red', 43.65, -79.38),
         ('plw', 'Pengluo W', 'blue', 45.50, -73.57),
-        ('yc', '*YAN CHU', 'red', 49.28, -123.12),
-        ('x', '*Xiao', 'blue', 41.88, -87.63),
+        ('yyt', 'Yuyi T', 'red', 49.28, -123.12),
+        ('xl', 'Xiao L', 'blue', 41.88, -87.63),
         ('zpy', 'Zhipeng Y', 'blue', 42.36, -71.06),
         ('scc', 'CHU KUI', 'blue', 29.76, -95.37),
         ('jx', 'Jing X', 'red', 29.76, -95.37),
@@ -42,12 +42,14 @@ edges = [
         ('jy', 'ayc', 'solid'),
         ('jy', 'jx', 'solid'),
         ('jy', 'scc', 'dashed'),
-        ('plw', 'yc', 'solid'),
-        ('plw', 'x', 'solid'),
+        ('plw', 'yyt', 'solid'),
+        ('plw', 'xl', 'solid'),
         ('plw', 'zpy', 'solid'),
         ('plw', 'ysc', 'solid'),
         ('plw', 'ayc', 'dashed'),
-        ('yc', 'x', 'solid'),
+        ('yyt', 'xl', 'gold'),
+        ('yyt', 'zpy', 'solid'),
+        ('xl', 'zpy', 'solid'),
         ('scc', 'zzz', 'solid')
     )
 ]
@@ -88,6 +90,13 @@ app.layout = html.Div([
                 'style': {
                     'background-color': [65, 105, 225],
                     'line-color': [65, 105, 225]
+                }
+            },
+            {
+                'selector': '.gold',
+                'style': {
+                    'background-color': [245, 189, 2],
+                    'line-color': [245, 189, 2]
                 }
             },
             {
