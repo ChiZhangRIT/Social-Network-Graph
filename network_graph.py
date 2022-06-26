@@ -29,7 +29,7 @@ edges = [
     {'data': {'source': source, 'target': target}, 'classes': linetype}
     for source, target, linetype in (
         ('cz', 'cl', 'solid'),
-        ('cz', 'jy', 'dashed'),
+        ('cz', 'jy', 'solid'),
         ('cz', 'plw', 'solid'),
         ('cz', 'scc', 'solid'),
         ('cz', 'zzz', 'dashed'),
@@ -40,8 +40,10 @@ edges = [
         ('cl', 'scc', 'dashed'),
         ('cl', 'jx', 'dashed'),
         ('jy', 'ayc', 'solid'),
+        ('jy', 'plw', 'solid'),
         ('jy', 'jx', 'solid'),
         ('jy', 'scc', 'dashed'),
+        ('plw', 'scc', 'dashed'),
         ('plw', 'yyt', 'solid'),
         ('plw', 'xl', 'solid'),
         ('plw', 'zpy', 'solid'),
