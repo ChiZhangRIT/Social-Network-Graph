@@ -14,14 +14,16 @@ nodes = [
         ('cl', 'Chang L', 'red', 40.71, -74),
         ('jy', 'Jing Y', 'red', 43.65, -79.38),
         ('plw', 'Pengluo W', 'blue', 45.50, -73.57),
-        ('yyt', 'Yuyi T', 'red', 49.28, -123.12),
-        ('xl', 'Xiao L', 'blue', 41.88, -87.63),
+        # ('yyt', 'Yuyi T', 'red', 49.28, -123.12),
+        # ('xl', 'Xiao L', 'blue', 41.88, -87.63),
         ('zpy', 'Zhipeng Y', 'blue', 42.36, -71.06),
-        ('scc', 'CHU KUI', 'blue', 29.76, -95.37),
+        ('qjf', 'Qiaojun F', 'blue', 29.76, -95.37),
         ('jx', 'Jing X', 'red', 29.76, -95.37),
-        ('zzz', 'Zizhen Z', 'blue', 29.76, -95.37),
+        ('ylh', 'Yuli H', 'red', 29.76, -95.37),
         ('ayc', 'Anne', 'red', 29.76, -95.37),
-        ('ysc', 'Yusi C', 'red', 29.76, -95.37)
+        ('ysc', 'Yusi C', 'red', 29.76, -95.37),
+        ('bz', 'Bill Zhan', 'blue', 29.76, -95.37),
+        ('mlz', 'Menglin Zhou', 'red', 29.76, -95.37)
     )
 ]
 
@@ -31,28 +33,34 @@ edges = [
         ('cz', 'cl', 'solid'),
         ('cz', 'jy', 'solid'),
         ('cz', 'plw', 'solid'),
-        ('cz', 'scc', 'solid'),
-        ('cz', 'zzz', 'dashed'),
+        ('cz', 'qjf', 'dashed'),
+        ('cz', 'ylh', 'dashed'),
         ('cz', 'zpy', 'dashed'),
         ('cl', 'jy', 'solid'),
         ('cl', 'plw', 'solid'),
         ('cl', 'ayc', 'solid'),
-        ('cl', 'scc', 'dashed'),
         ('cl', 'jx', 'dashed'),
         ('jy', 'ayc', 'solid'),
         ('jy', 'plw', 'solid'),
         ('jy', 'jx', 'solid'),
-        ('jy', 'scc', 'dashed'),
-        ('plw', 'scc', 'dashed'),
-        ('plw', 'yyt', 'solid'),
-        ('plw', 'xl', 'solid'),
+        ('plw', 'qjf', 'solid'),
+        ('plw', 'ylh', 'solid'),
+        # ('plw', 'yyt', 'solid'),
+        # ('plw', 'xl', 'solid'),
         ('plw', 'zpy', 'solid'),
         ('plw', 'ysc', 'solid'),
         ('plw', 'ayc', 'dashed'),
-        ('yyt', 'xl', 'gold'),
-        ('yyt', 'zpy', 'solid'),
-        ('xl', 'zpy', 'solid'),
-        ('scc', 'zzz', 'solid')
+        ('plw', 'bz', 'solid'),
+        ('plw', 'mlz', 'solid'),
+        ('qjf', 'ylh', 'gold'),
+        ('qjf', 'bz', 'solid'),
+        ('ylh', 'bz', 'solid'),
+        ('ylh', 'mlz', 'solid'),
+        ('bz', 'mlz', 'gold'),
+        # ('yyt', 'xl', 'gold'),
+        # ('yyt', 'zpy', 'solid'),
+        # ('xl', 'zpy', 'solid')
+        
     )
 ]
 
